@@ -22,6 +22,7 @@
     header h1 {
       margin: 0;
       font-size: 2.5rem;
+      color: #efebdd;
     }
     main {
       max-width: 700px;
@@ -53,25 +54,134 @@
       color: #aaa;
       padding: 2rem 1rem;
     }
+    .clothing-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .clothing-item img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+    .translate-button {
+      margin: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .hidden {
+      display: none;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1 style="color:#efebdd">DefinitelyRealVacationBlog</h1>
+    <h1>DefinitelyRealVacationBlog</h1>
+    <button class="translate-button" onclick="toggleLanguage()">Translate to Spanish</button>
   </header>
   <main>
     <article>
       <h2>Vacation: Costa Rica!</h2>
       <div class="meta">Drafted on May 28, 2025 by Hasnat Anwar</div>
-      <p><i>Costa Rica</i> is a beautiful spanish country that is warm and humid & year round (tropical) <br> After the 5 hour flight from NYC jfk airport, i would land in <i>Liberia</i>, a city in Costa Rica</p>
+      <p class="english">Costa Rica is a beautiful Spanish-speaking country that is warm and humid year-round (tropical). After a 5-hour flight from NYC JFK airport, I will land in Liberia, a city in Costa Rica.</p>
+      <p class="spanish hidden">Costa Rica es un hermoso país de habla hispana que es cálido y húmedo todo el año (tropical). Después de un vuelo de 5 horas desde el aeropuerto JFK de Nueva York, aterrizaré en Liberia, una ciudad en Costa Rica.</p>
       
-      <h3>Fun Fact: Did You Know?</h3>
-      --<p>Fun Fact: Did You Know? <br> Patatas Bravas is traditionally served as a "tapa," a tiny snack or appetizer, but it became so popular that it's now a staple on most Spanish restaurant menus. In fact, most bars in Spain have unofficial "Patatas Bravas contests" to see who can make the best version of this favorite dish, usually with their own secret recipe for the brava sauce! <a href="https://theculturetrip.com/europe/spain/articles/10-most-popular-spanish-tapas-and-where-to-find-them/" target="_blank" rel="noopener noreferrer">Source</a> </p>
+      <h3>Destination Overview</h3>
+      <p class="english">I like Guanacaste beach.</p>
+      <p class="spanish hidden">Me gusta la playa de Guanacaste.</p>
 
+      <h3>The Weather</h3>
+      <p class="english">In Costa Rica, it is hot and rains in the rainy season. I like when it is sunny.</p>
+      <p class="spanish hidden">En Costa Rica, hace calor y llueve en la temporada de lluvias. Me gusta cuando hace sol.</p>
+
+      <h3>Clothing</h3>
+      <div class="clothing-item">
+        <img src="https://example.com/swimsuit.jpg" alt="Swimsuit">
+        <p class="english">I wear a swimsuit because it is hot.</p>
+        <p class="spanish hidden">Llevo un traje de baño porque hace calor.</p>
+      </div>
+      <div class="clothing-item">
+        <img src="https://example.com/sandals.jpg" alt="Sandals">
+        <p class="english">I wear sandals for the beach.</p>
+        <p class="spanish hidden">Llevo sandalias para la playa.</p>
+      </div>
+      <div class="clothing-item">
+        <img src="https://example.com/hat.jpg" alt="Hat">
+        <p class="english">I wear a hat to protect myself from the sun.</p>
+        <p class="spanish hidden">Llevo un sombrero para protegerme del sol.</p>
+      </div>
+      <div class="clothing-item">
+        <img src="https://example.com/tshirt.jpg" alt="T-shirt">
+        <p class="english">I wear light t-shirts because it is hot.</p>
+        <p class="spanish hidden">Llevo camisetas ligeras porque hace calor.</p>
+      </div>
+      <div class="clothing-item">
+        <img src="https://example.com/shorts.jpg" alt="Shorts">
+        <p class="english">I wear shorts to be comfortable.</p>
+        <p class="spanish hidden">Llevo pantalones cortos para estar cómodo.</p>
+      </div>
+
+      <h3>Activities and Places</h3>
+      <p class="english">I will go to the beach. I can swim and sunbathe.</p>
+      <p class="spanish hidden">Voy a la playa. Puedo nadar y tomar el sol.</p>
+      <p class="english">I will visit Manuel Antonio National Park. I can see animals and hike.</p>
+      <p class="spanish hidden">Voy a visitar el Parque Nacional Manuel Antonio. Puedo ver animales y hacer senderismo.</p>
+      <p class="english">I will explore the city of Liberia. I can try local food.</p>
+      <p class="spanish hidden">Voy a explorar la ciudad de Liberia. Puedo probar la comida local.</p>
+
+      <h3>3-Day Itinerary</h3>
+      <h4>Day 1: Arrival and Beach</h4>
+      <p class="english"><strong>Morning:</strong> I arrive in Liberia. I take a taxi to the hotel and check in. <br>
+      <strong>Afternoon:</strong> I go to Guanacaste beach. I can swim in the ocean and sunbathe. I like to build sandcastles. <br>
+      <strong>Evening:</strong> I have dinner at a local restaurant. I order a typical Costa Rican dish, like "casado."</p>
+      <p class="spanish hidden"><strong>Por la mañana:</strong> Llego a Liberia. Tomo un taxi al hotel y me registro. <br>
+      <strong>Por la tarde:</strong> Voy a la playa de Guanacaste. Puedo nadar en el océano y tomar el sol. Me gusta construir castillos de arena. <br>
+      <strong>Por la noche:</strong> Ceno en un restaurante local. Pido un plato típico de Costa Rica, como el "casado."</p>
+
+      <h4>Day 2: Adventure Day</h4>
+      <p class="english"><strong>Morning:</strong> Breakfast at the hotel. I go to Manuel Antonio National Park. I can see monkeys and sloths. <br>
+      <strong>Afternoon:</strong> I hike in the park. I can take photos of nature. <br>
+      <strong>Evening:</strong> I return to the hotel. I have dinner at a restaurant and try "gallo pinto."</p>
+      <p class="spanish hidden"><strong>Por la mañana:</strong> Desayuno en el hotel. Voy al Parque Nacional Manuel Antonio. Puedo ver monos y perezosos. <br>
+      <strong>Por la tarde:</strong> Hago senderismo en el parque. Puedo tomar fotos de la naturaleza. <br>
+      <strong>Por la noche:</strong> Regreso al hotel. Ceno en un restaurante y pruebo el "gallo pinto."</p>
+
+      <h4>Day 3: Explore Liberia</h4>
+      <p class="english"><strong>Morning:</strong> Breakfast at the hotel. I visit the center of Liberia. I can buy souvenirs and crafts. <br>
+      <strong>Afternoon:</strong> I visit the Guanacaste Museum. I learn about the history and culture of Costa Rica. <br>
+      <strong>Evening:</strong> I have dinner at a restaurant and enjoy live music.</p>
+      <p class="spanish hidden"><strong>Por la mañana:</strong> Desayuno en el hotel. Visito el centro de Liberia. Puedo comprar recuerdos y artesanías. <br>
+      <strong>Por la tarde:</strong> Visito el Museo de Guanacaste. Aprendo sobre la historia y cultura de Costa Rica. <br>
+      <strong>Por la noche:</strong> Ceno en un restaurante y disfruto de la música en vivo.</p>
+
+      <h3>Fun Facts</h3>
+      <ul>
+        <li class="english">Did you know that Costa Rica has more than 800 miles of coastline?</li>
+        <li class="spanish hidden">¿Sabías que Costa Rica tiene más de 800 millas de costa?</li>
+        <li class="english">Costa Rica is home to over 5% of the world's biodiversity.</li>
+        <li class="spanish hidden">Costa Rica alberga más del 5% de la biodiversidad del mundo.</li>
+        <li class="english">The country has no army and has been peaceful since 1949.</li>
+        <li class="spanish hidden">El país no tiene ejército y ha sido pacífico desde 1949.</li>
+      </ul>
     </article>
   </main>
   <footer>
     &copy; 2025 DefinitelyRealVacationBlog
   </footer>
+
+  <script>
+    function toggleLanguage() {
+      const englishElements = document.querySelectorAll('.english');
+      const spanishElements = document.querySelectorAll('.spanish');
+      englishElements.forEach(el => el.classList.toggle('hidden'));
+      spanishElements.forEach(el => el.classList.toggle('hidden'));
+      const button = document.querySelector('.translate-button');
+      button.textContent = button.textContent === 'Translate to Spanish' ? 'Translate to English' : 'Translate to Spanish';
+    }
+  </script>
 </body>
 </html>
